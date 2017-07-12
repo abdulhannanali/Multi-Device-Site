@@ -51,6 +51,24 @@ header {
         box-sizing: border-box;
         font-weight: 300;
     }
+
+    #detail-section ul {
+        float: left;
+        box-sizing: border-box;
+        width: 50%;
+        padding-right: 1em;
+    }
+
+    #detail-section #video {
+        float: right;
+        box-sizing: border-box;
+        width: 50%;
+    }
+    
+
+    #detail-section br {
+        clear: both;
+    }
 }
 
 header br {
