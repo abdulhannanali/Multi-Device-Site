@@ -1,0 +1,206 @@
+/** 
+ * Genearl Universal Element Styles
+ * Applied to all the elements on the page
+ **/
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: lightgreen;
+    font-family: 'Roboto';
+}
+
+span.apple-emoji {
+    color: red;
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+}
+
+/** Header related styles **/
+header {
+    z-index: 1;
+    color: white;
+    font-weight: 1;
+    background-color: lightgreen;
+    background-image: url(people/background.jpg);
+    background-size: cover;
+    padding: 0.8em;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 700px) {
+
+    header #blurb {
+        float: left;
+        font-weight: 1000;
+        width: 50%;
+        font-size: 18px;
+        box-sizing: border-box;
+        padding-right: 10px;
+    }
+
+    header form {
+        float: right;
+        width: 50%;
+        box-sizing: border-box;
+        font-weight: 300;
+    }
+}
+
+header br {
+    clear: both;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: 60px;
+    color: lightcoral;
+}
+
+#apple-text {
+    color: grey;
+    background-color: white;
+}
+
+#header-line p {
+    font-size: 20px;
+}
+
+/*Promotional Form Related Styles*/
+header form {
+    background-color: lightcoral;
+    padding: 0.8em;
+    display: block;
+    background-color: rgba(240, 128, 128, 0.6);
+}
+
+input {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 18px;
+    color: black;
+}
+
+form button {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: lightgreen;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#detail-section {
+    padding: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: saddlebrown;
+    color: white;
+    margin: 0;
+}
+
+#detail-section h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+#detail-section h3 {
+    font-size: 36px;
+}
+
+#video iframe {
+    display: block;
+    width: 100%;
+    height: 320px;
+}
+
+#people-section {
+    background-color: lightskyblue;
+    padding: 20px;
+    margin: 0;
+}
+
+#people-section {
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#people-section h2 {
+    font-size: 32px;
+}
+
+#people-section img {
+    width: 70%;
+    margin: 10px;
+    border-radius: 400px;
+}
+
+#facts-section {
+    background-color: palegreen;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#facts-section a {
+    color: crimson;
+}
+
+#facts-section table {
+    margin: auto;
+}
+
+footer {
+    padding: 10px;
+    background-color: lightpink;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.lightblue {
+    color: lightblue;
+}
+
+li {
+    margin: 2px;
+}
+
+
+@media (min-width: 0px) and (max-width: 700px) {
+    #facts-section table thead {
+        display: none;
+    }
+
+    #facts-section caption {
+        display: none;
+    }
+
+    #facts-section table td {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-left: 50%;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        text-align: left;
+        background: #e9e9e9;
+    }
+
+    #facts-section table td:before {
+        content: attr(data-th) ": ";
+        display: inline-block;
+        color: #000000;
+        background: #e9e9e9;
+        border: 2px solid transparent;
+    }
+}

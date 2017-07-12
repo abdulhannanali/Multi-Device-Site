@@ -1,0 +1,165 @@
+<!--
+    Multi Device Site Application built using the
+    outdated but still very very very useful tutorial
+    on building websites to display at mutliple sites.
+
+    You can find tutorial on https://developers.google.com/web/fundamentals/getting-started/your-first-multi-screen-site
+-->
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FreshAppleFarms: Apples grown the real way</title>
+        <link href="//fonts.googleapis.com/css?family=Roboto:400,300,200,100&subset=latin,cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+
+                <!--Headline to be available to the user first when they open the application-->
+                <div id="overlay"></div>
+                <div id="header-line">
+                    <h1><a href="/" id="logo">Fresh Apple Farm <span class="apple-emoji">🍎</span></a></h1>
+                    <p>Serving the freshest and juicy apples since 1947</p>
+                </div>
+                <div id="blurb">
+                    <p>
+                        Great apples need great care to be produced and we make sure they get 
+                        this care. So they just taste as sweet as the sweet love and care we 
+                        grew them with.
+                    </p>
+                    <p>Apples from our farm are a delight in everything you use them for,
+                        you can make a healthy apple juice with them, or eat them as you wish
+                        by combining them with your favorite recipe. They taste great
+                        always.
+                    </p>
+                    <p>Our apples are always</p>
+                    <ul>
+                        <li>pest free and not bitten by a mouse like the one from <a href="https://apple.com" id="apple-text">Apple Inc. 🍎</a></li>
+                        <li>super red and ripe</li>
+                        <li>ready to cook</li>
+                        <li>juicy like there is actual <span class="lightblue">water 🌊🌊🌊</span> splashing when you eat them.</li>
+                    </ul>
+                </div>
+
+                <!--Forms for the Promotional Apple Stuff-->
+                <form action="/" id="promotion-form" method="POST">
+                    <h2>Subscribe to future promotions on our apples</h2>
+                    
+                    <!--Name field-->
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Hannan Ali" name="name">
+
+                    <!--Email address field-->
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="ali.abdulhannan@gmail.com" name="Email">
+
+                    <!--Telephone Field-->
+                    <label for="tel">Telephone</label>
+                    <input type="tel" placeholder="923001234567">
+
+                    <button type="submit">Subscribe for Promotions</button>
+                </form>
+
+                <br/>
+            </div>
+        </header>
+        <!--Further Description about the Process of FreshAppleFarms-->
+        <!--This will be an overview of the process our apples go through-->
+        <div id="detail-section">
+            <div class="container">
+
+                <h2>Our care for apples</h2>
+                <p>
+                    We might be an old company, but we use the latest technology
+                    in industry, to make sure we can keep you fed with apples you love and 
+                    at the same time keep our environment green and healthy.
+                    <br/>
+
+                    We possess some of the unique qualities 
+                </p>
+                <ul>
+                    <li>Our seeds genetically modified but safe (Monsanto free) seeds</li>
+                    <li>We use environment friendly pesticides</li>
+                    <li>Our farm is 100% run by wind power</li>
+                    <li>We use Teslas to supply our apples to keep the <b>C</b> emission low</li>
+                </ul>
+
+                <!--
+                    Video representing the detail of the process that goes in the
+                    manufacturing of these people
+                -->
+                <div id="video">
+                    <h3>Apples at our farms</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HMjgxzC0up8" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!--People make this farm what it is, they require a must mention on landing page-->
+        <div id="people-section">
+            <div class="container">
+
+                <h2>People who make these apples possible</h2>
+                <p>Our farm is given care by hundred of people involved from growing to supplying</p>
+
+                <!--This div will contain the images of the people listed here-->
+                <div id="images">
+                    <img src="people/auntelizabeth.jpg" alt="People: Aunt Elizabeth">
+                    <img src="people/unclejohn.jpg" alt="People: Uncle John">
+                    <img src="people/josh.jpg" alt="People: Josh">
+                </div>
+            </div>
+        </div>
+            
+            <!--
+                Nutritional Facts Table to be displayed,
+                This data can be in the form of tables 
+            -->
+            <div id="facts-section">
+                <h2>Nutritional Facts</h2>
+                <p>This page should never be complete without bragging how nutritious our apples are</p>
+                <table>
+                    <caption>
+                        <p>
+                            Data taken from <a href="https://www.google.com.pk/search?q=apple+nutrition&oq=apple+nutrition">Google</a>
+                        </p>
+                        <p><b>Amount Per</b> 100g</p>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Fat</th>
+                            <th>Sodium</th>
+                            <th>Cholestrol</th>
+                            <th>Potassium</th>
+                            <th>Carbohydrates</th>
+                            <th>Protein</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="Fat">0.2g</td>
+                            <td data-th="Sodium">1mg</td>
+                            <td data-th="Cholestrol">0mg</td>
+                            <td data-th="Potassium">107mg</td>
+                            <td data-th="Carbohydrates">14g</td>
+                            <td data-th="Protein">0.3g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!--Footer section to display the disclaimer and copyright for the landing page -->
+        <footer>
+            <div class="container">
+                <p>Disclaimer: Everything is totally fictional and is not based on reality, please donot believe</p>
+                <p>
+                    Real characters on this website are fictional and images are taken from Google.
+                    Do not believe on any information present here, that is all fake.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

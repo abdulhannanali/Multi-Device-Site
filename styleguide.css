@@ -1,0 +1,28 @@
+/*
+ * In the style guide the colors I am using gives 
+ * a very natural greenish reddish look to our landing
+ * page to associate it with the colors that are present at the 
+ * actual farm.
+ * 
+ * We have chosen six colors to represent the style of the application
+ * I am creating.
+ */
+.styleguide {
+    color: #ffffff;
+    color: #90ee90;
+
+    /* LightCoral is the color that represents apple */
+    color: lightcoral;
+
+    /*
+     * Sandy brown represents the brown soil in the environment
+     * and brown wood
+     */
+    color: saddlebrown;
+
+    /* Represents the sky*/
+    color: lightskyblue;
+
+    /* This can be associated with the shadow that's present in the farm and as a general color */
+    color: #000000;
+}
